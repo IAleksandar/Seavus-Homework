@@ -1,0 +1,18 @@
+let promenliva = 1;
+console.log(promenliva);
+console.log(typeof(promenliva));
+promenliva = "Hello World";
+console.log(promenliva);
+console.log(typeof(promenliva));
+promenliva = true;
+console.log(promenliva);
+console.log(typeof(promenliva));
+promenliva = null;
+console.log(promenliva);
+console.log(typeof(promenliva));
+promenliva = [];
+console.log(promenliva);
+console.log(typeof(promenliva));
+promenliva = undefined;
+console.log(promenliva);
+console.log(typeof(promenliva));
