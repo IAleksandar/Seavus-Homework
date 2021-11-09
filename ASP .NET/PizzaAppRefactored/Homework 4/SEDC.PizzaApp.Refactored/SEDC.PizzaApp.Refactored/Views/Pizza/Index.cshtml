@@ -1,0 +1,28 @@
+﻿@model List<PizzaListViewModel>
+
+<div class="text-center">
+    <a asp-action="Create" asp-controller="Pizza" class="btn">Create pizza</a>
+    <h2 class="display-4">List of pizzas:</h2>
+</div>
+<br />
+
+<div class="row">
+    @foreach (var pizza in @Model)
+    {
+
+
+<div class="card text-white bg-success mb-3" style="max-width: 18rem; margin-left:10px;">
+    @if (pizza.IsOnPromotion)
+    {
+<div class="card-header">The is on promotion</div> }
+                else
+                {
+<div class="card-header">The is not on promotion</div>}
+<div class="card-body">
+    <h5 class="card-title">Name: @pizza.Name</h5>
+    <h5 class="card-title">Size: @pizza.PizzaSizeEnum</h5>
+    <h5 class="card-title">Price: @pizza.Price</h5>
+</div>
+    <a asp-controller="Pizza" asp-action="Details" asp-route-id="@pizza.Id">See details</a>
+</div>}
+</div>
