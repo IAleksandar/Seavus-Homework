@@ -1,0 +1,196 @@
+html, body {
+    /* height: 100%; */
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex: 0.5;
+    background-color: rgb(23, 181, 131);
+}
+
+.main-img {
+    flex: 1.5;
+    width: 100% !important;
+}
+
+.main-img > img {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+
+    flex: 2;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card > div {
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+    width: 30%;
+    height: 70%;
+}
+
+.footer {
+    flex: 0.3;
+    text-align: center;
+    color: grey;
+
+}
+
+.menu-container {
+    margin-top: 30px;
+    margin-right: 250px;
+    overflow: hidden;
+}
+
+.logo-container {
+    margin: 10px 250px; 
+}
+
+.btn-green {
+    background-color: rgb(5, 95, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+.btn-white {
+    background-color: white;
+    color: rgb(5, 95, 0);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+h2 {
+    font-family: 'Nova Flat', cursive;
+}
+
+h3 {
+    font-family: 'Nova Flat', cursive;
+}
+
+p {
+    font-family: 'Nova Flat', cursive;
+}
+
+.btn-read {
+    border: 2px solid rgb(19, 186, 19);
+    font-family: 'Nova Flat', cursive;
+    padding: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.span-text {
+    background-color: rgb(204, 198, 198);
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+span {
+    text-decoration: underline;
+    color: green;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+.header {
+    flex-direction: column;
+}
+
+.header > div {
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    margin: 0px;
+}
+
+.menu-container {
+    flex-direction: column;
+    float: none;
+}
+
+.menu-container > button {
+    width: 100%;
+    flex: 1;
+}
+
+.card {
+    flex-direction: column;    
+}
+
+.card > div {
+    width: 100%;
+    flex: 1;
+    margin: 20px;
+}
+
+}
+ 
+
+
+/* 
+@media only screen and (min-width: 768px) {
+
+    .header {
+        flex-direction: column;
+    }
+    
+    .header > div {
+        text-align: center;
+        width: 100%;
+        flex: 0.1;
+    }
+    
+    .menu-container {
+        flex-direction: column;
+        float: none;
+    }
+    
+    .menu-container > button {
+        width: 100%;
+        flex: 0.5;
+    }
+    
+    .card {
+        flex-direction: column;    
+    }
+    
+    .card > div {
+        width: 100%;
+        flex: 5;
+        margin: 20px;
+    }
+
+    .span-text {
+        margin: 0px;
+        padding: 0px;
+    }
+
+} */

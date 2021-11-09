@@ -1,0 +1,60 @@
+.slika {
+    height: 100%;
+    width: 30%;
+    padding: 2.5%;
+}
+
+body {
+    background-color: #212529;
+    padding: 0px 10px 0px 10px;
+}
+
+table#mytable, table#mytable td {
+    border: none !important;
+}
+
+.bwm_i8 {
+    width: 50%;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.mercedes {
+    width: 100%;
+}
+
+.bmw3 {
+    width: 100%;
+}
+
+#bmwx6 {
+    width: 100%;
+}
+
+#mercedes_sl {
+    width: 100%;
+}
+
+#price {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#th {
+    color: rgb(182, 255, 225);
+    text-align: center;
+}
+
+.td {
+    color: rgb(182, 255, 225);
+    padding-left: 100px;
+}
+
+.td1 {
+    float: right;
+    padding-right: 100px;
+}
