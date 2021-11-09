@@ -1,0 +1,27 @@
+﻿@using SEDC.PizzaApp.Models.Domain
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <p>@Html.ActionLink("See Users", "SeeUsers")</p>
+
+
+    <p>Here are all the users:</p>
+    @{
+        var someList = ViewBag.users;
+        if (someList != null)
+        {
+
+
+            @foreach (User user in someList)
+            {
+                <p>@user.FirstName @user.LastName</p>
+            }
+        }
+    }
+
+</div>

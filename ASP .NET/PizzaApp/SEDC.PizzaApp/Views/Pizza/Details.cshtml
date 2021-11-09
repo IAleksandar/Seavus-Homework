@@ -1,0 +1,19 @@
+﻿@using SEDC.PizzaApp.Models.Domain
+@using SEDC.PizzaApp.Models.ViewModels
+@model PizzaViewModel
+
+
+<h2>Details:</h2>
+@Html.Partial("_PizzaDetailsPartialView")
+
+
+@{
+    var isPromotionText = "";
+    <h4>
+        @if (!Model.IsOnPromotion)
+        {
+            isPromotionText = "not";
+        }
+        Our pizza is @isPromotionText on promotion
+    </h4>
+}

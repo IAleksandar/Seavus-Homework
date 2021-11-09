@@ -1,0 +1,9 @@
+﻿@using SEDC.PizzaApp.Models.Domain
+@model List<User>
+
+
+<p>Here are all the users:</p>
+@foreach (User user in Model)
+{
+    <p>@user.FirstName @user.LastName</p>
+}
